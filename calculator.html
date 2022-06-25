@@ -1,0 +1,31 @@
+<!--doctype html-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>calculator.html</title>
+  <script type="text/javascript">
+  var operation=prompt("What operation would you like to perform(+,-,*,/)");
+      getFirstNumeber=prompt("Input first number");
+	  getSecondNumber=prompt("Input second number");
+	  result="";
+	  if(operation=="+"){
+	  result=parseFloat(getFirstNumeber)+parseFloat(getSecondNumber)
+	  }else if(operation=="-"){
+	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
+	  }else if(operation=="/"){
+	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
+	  }
+	  else if(operation=="*"){
+	  result=parseFloat(getFirstNumeber)*parseFloat(getSecondNumber)
+	  }
+	  else{
+	  alert("You did not enter a valid operation");
+	  result="invalid"
+	  };
+	  output=getFirstNumeber+operation+getSecondNumber+ " = " +result+" .";
+	  display=alert(output);
+  </script>
+</head>
+<body>
+</body>
+</html>
