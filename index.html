@@ -13,21 +13,26 @@
       getFirstNumeber=prompt("Input first number");
 	  getSecondNumber=prompt("Input second number");
 	  result="";
+	  symbol="";
 	  if(operation=="1"){
-	  result=parseFloat(getFirstNumeber)+parseFloat(getSecondNumber)
+	  result=parseFloat(getFirstNumeber)+parseFloat(getSecondNumber);
+           symbol="+"
 	  }else if(operation=="2"){
-	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
+	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber);
+	  symbol="-"
 	  }else if(operation=="3"){
-	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
+	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber);
+	  symbol="/"
 	  }
 	  else if(operation=="4"){
-	  result=parseFloat(getFirstNumeber)*parseFloat(getSecondNumber)
+	  result=parseFloat(getFirstNumeber)*parseFloat(getSecondNumber);
+	   symbol="*"
 	  }
 	  else{
 	  alert("You did not enter a valid operation");
 	  result="invalid"
 	  };
-	  output=getFirstNumeber+operation+getSecondNumber+ " = " +result+" .";
+	  output=getFirstNumeber+symbol+getSecondNumber+ " = " +result+" .";
 	  display=alert(output);
   </script>
 </head>
