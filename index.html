@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <title>calculator.html</title>
   <script type="text/javascript">
-  var operation=prompt("What operation would you like to perform(+,-,*,/)");
+  var selection="What operation would you like to perform?Enter Number\n"
+      selection+="1:Addition \n"
+      selection+="2:Subtraction \n"
+      selection+="3:Division \n"
+      selection+="4:Multiplication \n"	  
+  var operation=prompt((+,-,*,/)");
       getFirstNumeber=prompt("Input first number");
 	  getSecondNumber=prompt("Input second number");
 	  result="";
-	  if(operation=="+"){
+	  if(operation=="1"){
 	  result=parseFloat(getFirstNumeber)+parseFloat(getSecondNumber)
-	  }else if(operation=="-"){
+	  }else if(operation=="2"){
 	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
-	  }else if(operation=="/"){
+	  }else if(operation=="3"){
 	  result=parseFloat(getFirstNumeber)-parseFloat(getSecondNumber)
 	  }
-	  else if(operation=="*"){
+	  else if(operation=="4"){
 	  result=parseFloat(getFirstNumeber)*parseFloat(getSecondNumber)
 	  }
 	  else{
